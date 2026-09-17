@@ -1,4 +1,14 @@
+![Steel Temperature Prediction](assets/banner.svg)
+
+[English](README.md) · [Português](README.pt-BR.md) · [Notebook](notebooks/steel_temperature_prediction.ipynb) · [Portfolio](https://github.com/joaovspereira)
+
 # Steel Temperature Prediction
+
+> **MAE 5.533 °C · R² 0.773**
+
+**Decision question:** How accurately can final steel temperature be estimated from recorded process data?
+
+**Key result:** 45.3% lower MAE than the mean baseline in the saved retrospective test.
 
 End-to-end regression project for a metallurgical process.
 
@@ -6,7 +16,7 @@ End-to-end regression project for a metallurgical process.
 Steelproof wants to improve temperature control during secondary steel treatment. A reliable prediction of final steel temperature can support faster and more energy-efficient operational decisions.
 
 ## Objective
-Predict the final steel temperature from process data with event-time filtering and translating prediction error into operational meaning.
+Predict the final steel temperature from process data and interpret prediction error within the limits of a retrospective evaluation.
 
 ## Saved evaluation results
 - **Selected model:** LightGBM
@@ -16,7 +26,7 @@ Predict the final steel temperature from process data with event-time filtering 
 - **MAE reduction vs. mean baseline:** 45.3%
 
 ## What the project demonstrates
-Data integration, domain-informed cleaning, feature engineering, leakage prevention, regression, hyperparameter tuning, cross-validation, residual analysis and model interpretation.
+Data integration, domain-informed cleaning, feature engineering, feature-timing assessment, regression, hyperparameter tuning, cross-validation, residual analysis and model interpretation.
 
 ## Technologies
 Python · pandas · NumPy · scikit-learn · LightGBM · Matplotlib · Seaborn · Jupyter
@@ -58,3 +68,9 @@ The publication review checked notebook structure and code syntax, but did not r
 ## Learning
 
 This project was developed during the TripleTen Data Science bootcamp. It demonstrates a documented analytical workflow, explicit evaluation criteria and interpretation of model limitations.
+
+## Key learning
+
+Operational usefulness depends on when each feature becomes available, as well as on model accuracy.
+
+[Explore the complete portfolio](https://github.com/joaovspereira) · [Contact](mailto:joaovitorsouza20pereira@gmail.com)
